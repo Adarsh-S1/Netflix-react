@@ -1,0 +1,291 @@
+
+.homepage {
+  background-color: #222222;
+  color: #ffffff;
+  font-family: "Netflix Sans Regular";
+}
+.banner {
+  background-image: url(../Home/Home.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 10px;
+}
+.netflixlogo {
+  margin-top: 30px;
+  margin-left: 50px;
+  height: 35px;
+}
+.fadebanner {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0.1) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.header {
+  width: 100%;
+  display: flex;
+}
+.header1 {
+  width: 90%;
+  z-index: 10;
+}
+.header2 {
+  z-index: 10;
+  width: 10%;
+}
+.signin {
+  background-color: #e50f14 !important;
+  border-color: #e50f14 !important;
+  margin-top: 30px;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  padding: 5px 17px 5px 17px !important;
+}
+.caption {
+  margin-top: 155px;
+  font-weight: 700;
+  font-size: 3.2rem;
+  max-width: 620px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  position: sticky;
+  z-index: 10;
+}
+.caption1 {
+  font-size: 1.725rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: sticky;
+  z-index: 10;
+}
+.emailcaption {
+  font-weight: 400;
+  font-size: 1.3rem;
+  position: sticky;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+.emailform {
+  display: flex;
+  justify-content: center;
+}
+
+.emailform input {
+  border-color: #717476;
+  outline: none;
+  z-index: 10;
+  min-width: 450px;
+  height: 60px !important;
+}
+
+.emailform ::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #a0a0a0;
+  padding-left: 10px;
+}
+
+.emailform button {
+  font-size: 1.625rem;
+  font-weight: 400;
+  height: 58px;
+  margin-top: 1px;
+  z-index: 10;
+  width: 205px;
+  background-color: #dc0e10 !important;
+  border-radius: 2px !important;
+}
+
+.emailform svg {
+  z-index: 10;
+  height: 25px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  background-color: #000000;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cardcaption {
+  width: 50%;
+  margin-top: 100px;
+}
+.cardcaption h1 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 3.125rem;
+  margin-bottom: 30px;
+}
+.cardcaption h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-left: 20%;
+  text-align: left;
+  width: 75%;
+}
+.video {
+  width: 50%;
+  display: flex;
+  overflow-x: hidden;
+}
+.video video {
+  margin-left: -562px;
+  margin-top: -20px;
+}
+.tv {
+  position: relative;
+}
+.card2images {
+  width: 50%;
+}
+.mainImage {
+  width: 500px;
+  margin-top: 50px;
+  position: relative;
+}
+.image2 {
+  margin-left: -55px;
+  margin-top: -150px;
+  width: 350px;
+  position: relative;
+  z-index: 10;
+}
+.imggif {
+  margin-top: -170px;
+  margin-left: -80px;
+  margin-bottom: -20px;
+  z-index: 10;
+  height: 50px;
+  position: relative;
+}
+.cardcaption2 {
+  margin-top: 150px;
+  margin-left: 80px;
+}
+.cardcaption2 h1 {
+  font-weight: 700;
+  font-size: 3.019rem;
+  width: 520px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.cardcaption2 h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  width: 75%;
+  text-align: left;
+}
+
+.cardcaption3 {
+  width: 50%;
+  margin-top: 200px;
+}
+.cardcaption3 h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-left: -30px;
+  font-size: 3.125rem;
+  margin-bottom: 30px;
+}
+.cardcaption3 h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-left: 100px;
+  text-align: left;
+  width: 75%;
+}
+.video3 {
+  width: 50%;
+  display: flex;
+  overflow-x: hidden;
+}
+.video3 video {
+  margin-left: -480px;
+  margin-top: -100px;
+  width: 350px;
+}
+.pc {
+  margin-top: 50px;
+  position: relative;
+  width: 600px;
+}
+.card4images {
+  width: 50%;
+}
+.image4 {
+  width: 500px;
+  margin-left: 80px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.cardcaption4 {
+  margin-top: 100px;
+  margin-left: 80px;
+}
+.cardcaption4 h1 {
+  font-weight: 700;
+  font-size: 3.019rem;
+  width: 500px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.cardcaption4 h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  width: 75%;
+  text-align: left;
+}
+.netflixquestions {
+  background-color: black;
+}
+.netflixquestions h1 {
+  font-size: 3.125rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+.question1 {
+  background-color: #303030;
+  display: flex;
+  margin: auto;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 10px;
+  font-weight: 400;
+  position: relative;
+  width: 60%;
+  border: 0;
+}
+.question1 h3{
+  width: 95%;
+}
+.question1 svg {
+  margin: auto;
+  top: 2px;
+  width: 5%;
+  height: 25px;
+  transform: rotate(45deg);
+  position: relative;
+  cursor: pointer;
+}
+
+.question1detail h5{
+  background-color:#303030 ;
+  font-size: 1.625rem;
+  font-weight: 400;
+  width: 60%;
+  margin: auto;
+  margin-top: -8.5px;
+  margin-bottom: 8px;
+  padding: 1.2em;
+}

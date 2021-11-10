@@ -1,0 +1,64 @@
+.prepaymentparent {
+  font-family: "Netflix Sans Regular";
+}
+.headerprepayment {
+  display: flex;
+  width: 100%;
+}
+.logosvg1 {
+  margin-left: 40px;
+  height: 45px;
+  margin-top: 23px;
+}
+.headerpre1 {
+  width: 90%;
+}
+.headerpre2 {
+  margin-top: 35px;
+}
+.headerpre2 h5 {
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.checkmark {
+  margin-top: 105px;
+  height: 50px;
+}
+
+.tick {
+  height: 25px;
+}
+.feature {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.feature h6{
+    font-size: 17.5px;
+}
+
+.prepaymentbutton {
+  background-color: #e50f14 !important;
+  border-color: #e50f14 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+  height: 50px !important;
+  margin-top: 30px;
+}
+
+.steps{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.planchoose{
+    font-weight: 600;
+    font-size: 23px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
