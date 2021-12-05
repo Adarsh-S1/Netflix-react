@@ -1,0 +1,46 @@
+.featurepre {
+  display: flex;
+  margin-bottom: 12px;
+  margin-left: 200px;
+}
+
+.stepspre {
+  margin-top: 20px;
+  font-size: 12px;
+  margin-left: 200px;
+}
+
+.planchoosepre {
+  font-weight: 600;
+  font-size: 23px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  margin-left: 200px;
+}
+.paymentdetails {
+  padding: 30px 100px 0px 100px;
+}
+.monthlyprice span {
+  color: #e60914;
+  font-weight: 800;
+}
+
+.paybar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.paybar img {
+  margin-right: auto;
+  height: 50px;
+  width: auto;
+}
+
+.paybar Button {
+  margin-top: 5px;
+  background-color: #e50f14 !important;
+  border-color: #e50f14 !important;
+  height: 40px;
+}
+

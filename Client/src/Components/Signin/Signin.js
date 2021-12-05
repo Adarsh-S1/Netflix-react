@@ -1,32 +1,43 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { client } from "../../axios/axios";
-import bcrypt from "bcryptjs";
 import "./Signin.css";
 import { Button } from "react-bootstrap";
 function Signin() {
   let history = useHistory();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [userdetails, setUserdetails] = useState("");
   const [signuperror, setsignuperror] = useState("");
 
   const handleSignup = (e) => {
     e.preventDefault();
-    const data = {
-      Email: email,
-      Password: bcrypt.hashSync(password, bcrypt.genSaltSync(10)),
-    };
     client
-      .post("/login", data)
+      .post(
+        "/login",
+        {
+          Email: email,
+          Password: password,
+        },
+        { withCredentials: true }
+      )
       .then((res) => {
-        if(res.data=="success") history.push("/prepayment");
+        localStorage.setItem("user", JSON.stringify(res.data));
+        if (res.data != "unauthenticated") {
+          if (res.data.payment == "Yes") history.push("/home");
+          else history.push("/prepayment");
+        }
       })
       .catch((err) => {
         console.log(err);
       });
   };
+  useEffect(() => {
 
+    if (JSON.parse(localStorage.getItem("user")) != undefined) {
+      history.push("/");
+    }
+  }, []);
   return (
     <div className="parentlogin">
       <div className="fadebanner" />
@@ -51,7 +62,7 @@ function Signin() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <Button 
+          <Button
             onClick={(e) => {
               handleSignup(e);
             }}
@@ -64,10 +75,9 @@ function Signin() {
         <div className="otherlogin">
           <p className="fblogin">
             <img src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" />
-            Login with Facebook
+            &nbsp;Login with Facebook
           </p>
           <p className="help">Need help?</p>
-          <p className="Signup">New to Netflix? Sign up now</p>
         </div>
       </div>
     </div>

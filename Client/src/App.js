@@ -1,4 +1,4 @@
-import React,{useEffect,useContext} from "react";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home/Home";
@@ -7,7 +7,6 @@ import Payment from "./Components/Payment/Payment";
 import Prepayment from "./Components/Prepayment/Prepayment";
 
 function App() {
-
   return (
     <div>
       <Router>
@@ -21,7 +20,7 @@ function App() {
           <Payment />
         </Route>
         <Route exact path="/prepayment">
-         <Prepayment></Prepayment>
+          <Prepayment></Prepayment>
         </Route>
       </Router>
     </div>

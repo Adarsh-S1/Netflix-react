@@ -17,10 +17,10 @@
 
 .loginbox {
   background-color: rgba(0, 0, 0, 0.75);
-  height: 500px;
+  height: 450px;
   border-radius: 10px;
-  width: 450px;
-  padding: 60px 68px 40px;
+  width: 400px;
+  padding: 60px 20px 60px 40px ;
   position: relative;
   margin: 40px auto auto auto ;
   z-index: 10;
@@ -46,7 +46,7 @@
 .signinbutton{
       background: #e50914 !important;
       border-color:#e50914 !important ;
-      width: 100%;
+      width: 320px;
       height: 45px;
       font-weight:600 !important;
       letter-spacing: 1px;
@@ -54,7 +54,13 @@
       outline: none;
 }
 .otherlogin{
+  display: flex;
+  margin-top: 20px;
   color: #737373;
+  font-size: 14px;
+}
+.fblogin{
+  width: 70%;
 }
 .fblogin img{
   height: 20px;

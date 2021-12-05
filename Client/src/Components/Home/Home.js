@@ -1,7 +1,8 @@
 import "./Home.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import { verifyLogin } from "../../axios/localAuth";
 
 function Home() {
   let history = useHistory();
@@ -11,7 +12,9 @@ function Home() {
   const [question4, setQuestion4] = useState(false);
   const [question5, setQuestion5] = useState(false);
   const [question6, setQuestion6] = useState(false);
-
+  useEffect(() => {
+    verifyLogin(history);
+  }, []);
   return (
     <div className="homepage">
       <div className="banner">
@@ -28,7 +31,15 @@ function Home() {
             </svg>
           </div>
           <div className="header2">
-            <Button onClick={(e) => { e.preventDefault(); history.push("/login");}}  className="btn-danger signin">
+            <Button
+              onClick={(e) => {
+                e.preventDefault();
+                if (JSON.parse(localStorage.getItem("user")) != undefined)
+                  history.push("/prepayment");
+                else history.push("/login");
+              }}
+              className="btn-danger signin"
+            >
               Sign In
             </Button>
           </div>

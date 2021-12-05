@@ -12,12 +12,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-app.use(cors());
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 app.use(
   session({
     secret: "NetflixKey",
-    resave: true,
-    cookie: { maxAge: 86400000 },
+    cookie: {
+      maxAge: 24 * 60 * 60 * 1000,
+    },
+    resave: false,
     saveUninitialized: true,
   })
 );
