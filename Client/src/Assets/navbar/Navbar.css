@@ -1,0 +1,47 @@
+
+.netflixlogohome{
+  height: 35px;
+  padding-right: 40px;
+}
+.section1{
+  width: 80%;
+  display: flex;
+
+}
+.homenavbar{
+position: relative;
+z-index: 10;
+display: flex;
+padding-top: 30px;
+padding-left: 50px;
+height: 35px;
+width: 100%;
+}
+.homenavbar h6{
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section2{
+width: 20%;
+display: flex;
+position: relative;
+z-index: 10;
+}
+.section2 img{
+  padding-left: 15px;
+    padding-right: 15px;
+
+}
+.searchiconhome{
+  height:27px;
+  padding-top: 5px;
+}
+.avatar{
+  height: 30px;
+}
+.dropdownnav{
+  height: 15px;
+  margin-top: 7px;
+  margin-left: -20px;
+}

@@ -5,6 +5,8 @@ import Home from "./Components/Home/Home";
 import Signin from "./Components/Signin/Signin";
 import Payment from "./Components/Payment/Payment";
 import Prepayment from "./Components/Prepayment/Prepayment";
+import Userhome from "./Components/Userhome/Userhome";
+import Watchmovie from "./Components/Watchmovie/Watchmovie";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route exact path="/prepayment">
           <Prepayment></Prepayment>
+        </Route>
+        <Route exact path="/home">
+          <Userhome></Userhome>
+        </Route>
+        <Route exact path="/watchmovie">
+          <Watchmovie/>
         </Route>
       </Router>
     </div>

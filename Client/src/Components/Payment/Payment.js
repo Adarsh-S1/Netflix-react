@@ -95,7 +95,7 @@ function Payment() {
       });
     };
   return (
-    <div className="prepaymentparent">
+    <div className="paymentparent">
       <div className="headerprepayment">
         <div className="headerpre1">
           <svg className="logosvg1" viewBox="0 0 111 30">
@@ -113,7 +113,7 @@ function Payment() {
       </div>
       <hr />
       <p className="stepspre">
-        STEP 3 OF <b>3</b>
+        STEP 2 OF <b>3</b>
       </p>
       <h4 className="planchoosepre">Choose the plan that’s right for you</h4>
       <div className="featurepre">
