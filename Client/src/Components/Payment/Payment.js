@@ -1,99 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import "./Payment.css";
 import { Button } from "react-bootstrap";
-import { client } from "../../axios/axios";
 
-function loadRazorpay(src) {
-  return new Promise((resolve) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.onload = () => {
-      resolve(true);
-    };
-    script.onerror = () => {
-      resolve(false);
-    };
-    document.body.appendChild(script);
-  });
-}
-
+  
 function Payment() {
-  let history = useHistory();
-  useEffect(() => {
-    if (JSON.parse(localStorage.getItem("user")) == undefined) {
-      history.push("/login");
-    }
-  }, []);
-
-  const createOrder = async (e) => {
-    e.preventDefault();
-    const res = await loadRazorpay(
-      "https://checkout.razorpay.com/v1/checkout.js"
-    );
-    if (!res) {
-      alert("Razorpay not loaded");
-    } else {
-      let user = JSON.parse(localStorage.getItem("user"));
-      client
-        .post(
-          "/payment",
-          { paymentId: user.paymentId },
-          { withCredentials: true }
-        )
-        .then((res) => {
-          if (res.data == "") {
-            localStorage.clear();
-            history.push("/login");
-          } else {
-            let order = res.data;
-            var options = {
-              key: "rzp_test_sj4BzMwDvhM1ik",
-              amount: order.amount,
-              currency: "INR",
-              name: "NETFLIX",
-              description: "₹ 499 Plan",
-              image:"../../home/minilogo.png",
-              order_id: order.id,
-              handler: function (response) {
-                verifyPayment(response, order);
-              },
-              prefill: {
-                name: "Adarsh",
-                email: "adarsh@gmail.com",
-                contact: "6282340803",
-              },
-              notes: {
-                address: "",
-              },
-              theme: {
-                color: "#e50f14",
-              },
-            };
-            const rzp = new window.Razorpay(options);
-            rzp.open();
-          }
-        });
-    }
-  };
-  const verifyPayment = (response, order) => {
-    client
-      .post("/verifypayment", { response, paymentId:order.receipt}, { withCredentials: true })
-      .then((res) => {
-        
-        if (res.data.payment == "success") {
-          history.push("/home");
-        } else {
-          alert("Payment Failed");
-        }});
-  };
-      const signout = (e) => {
-      e.preventDefault();
-      client.get("/signout", { withCredentials: true }).then((res) => {
-        localStorage.clear();
-        history.push("/");
-      });
-    };
+   let history =useHistory()
   return (
     <div className="paymentparent">
       <div className="headerprepayment">
@@ -106,9 +18,7 @@ function Payment() {
           </svg>
         </div>
         <div className="headerpre2">
-          <h5 onClick={(e) => {
-            signout(e)
-          }}>Sign Out</h5>
+          <h5>Sign Out</h5>
         </div>
       </div>
       <hr />
@@ -212,13 +122,8 @@ function Payment() {
           <hr />
           <div className="paybar">
             <img src="https://badges.razorpay.com/badge-dark.png" />
-            <Button
-              className="btn-danger"
-              onClick={(e) => {
-                createOrder(e);
-              }}
-            >
-              Pay Now
+            <Button onClick={(e) => { e.preventDefault(); history.push("/home") }}
+              className="btn-danger"> Pay Now
             </Button>
           </div>
         </div>

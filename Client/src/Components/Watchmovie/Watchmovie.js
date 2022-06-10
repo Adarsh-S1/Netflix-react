@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Youtube from "react-youtube";
 import "./Watchmovie.css";
 function Watchmovie() {
@@ -15,7 +15,7 @@ function Watchmovie() {
           videoId={localStorage.getItem("Trailer")}
         />
       ) : (
-        <img src="../../Watchmovie/Nomovie.jpg"></img>
+        <img src="../../Watchmovie/Nomovie.jpg" alt=""></img>
       )}
     </div>
   );

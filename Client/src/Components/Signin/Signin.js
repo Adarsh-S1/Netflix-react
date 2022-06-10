@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { client } from "../../axios/axios";
 import "./Signin.css";
 import { Button } from "react-bootstrap";
 function Signin() {
@@ -8,36 +7,12 @@ function Signin() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [signuperror, setsignuperror] = useState("");
 
   const handleSignup = (e) => {
     e.preventDefault();
-    client
-      .post(
-        "/login",
-        {
-          Email: email,
-          Password: password,
-        },
-        { withCredentials: true }
-      )
-      .then((res) => {
-        localStorage.setItem("user", JSON.stringify(res.data));
-        if (res.data != "unauthenticated") {
-          if (res.data.payment == "Yes") history.push("/home");
-          else history.push("/prepayment");
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-  useEffect(() => {
+         history.push("/prepayment");
 
-    if (JSON.parse(localStorage.getItem("user")) != undefined) {
-      history.push("/");
-    }
-  }, []);
+  };
   return (
     <div className="parentlogin">
       <div className="fadebanner" />
@@ -71,7 +46,7 @@ function Signin() {
             Sign In
           </Button>
         </form>
-        {signuperror && <p>{signuperror}</p>}
+       
         <div className="otherlogin">
           <p className="fblogin">
             <img src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" />

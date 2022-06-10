@@ -1,24 +1,10 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import "./Prepayment.css";
 import { useHistory } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import { client } from "../../axios/axios";
 function Prepayment() {
   let history = useHistory();
-  client.get("/prepayment" ,{ withCredentials: true }).then((res) => {
-    if (res.data == "") {
-       localStorage.clear();
-       history.push("/");
-     }
-  })
 
-  const signout = (e) => {
-    e.preventDefault();
-    client.get("/signout", { withCredentials: true }).then((res) => {
-        localStorage.clear();
-        history.push("/");
-     })
-  }
  
   return (
     <div class="prepaymentparent">
@@ -32,9 +18,7 @@ function Prepayment() {
           </svg>
         </div>
         <div className="headerpre2">
-          <h5 onClick={(e) => {
-            signout(e)
-          }}>Sign Out</h5>
+          <h5>Sign Out</h5>
         </div>
       </div>
       <hr />
