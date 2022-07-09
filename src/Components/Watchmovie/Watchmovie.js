@@ -6,16 +6,19 @@ function Watchmovie() {
     <div className="movieparentdiv">
       {localStorage.getItem("Trailer") ? (
         <Youtube
+          className="youtube img-fluid"
           allowfullscreen="allowfullscreen"
           opts={{
-            height: "555px",
-            width: "1180px",
             playerVars: { autoplay: 1 },
           }}
           videoId={localStorage.getItem("Trailer")}
         />
       ) : (
-        <img src="../../Watchmovie/Nomovie.jpg" alt=""></img>
+        <img
+          className="img-fluid youtube"
+          src="../../Watchmovie/Nomovie.jpg"
+          alt=""
+        ></img>
       )}
     </div>
   );

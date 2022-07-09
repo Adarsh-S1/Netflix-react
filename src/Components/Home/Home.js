@@ -49,7 +49,13 @@ function Home() {
         </center>
         <div className="emailform">
           <input placeholder="Email address" type="email" name="" id="" />
-          <Button className="btn-danger">
+          <Button
+            onClick={(e) => {
+              e.preventDefault();
+              history.push("/login");
+            }}
+            className="btn-danger"
+          >
             Get Started &nbsp;
             <svg viewBox="0 0 6 15">
               <path
@@ -331,6 +337,8 @@ function Home() {
               </h5>
             </div>
           )}
+          <br />
+          <br />
         </div>
       </div>
     </div>

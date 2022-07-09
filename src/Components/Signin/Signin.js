@@ -48,16 +48,10 @@ function Signin() {
         </form>
         <br />
         <center>
-          <p style={{color:"#6cffba"}}>THIS IS A STATIC LOGIN PAGE. CLICK LOGIN TO VISIT NEXT PAGE</p>
+          <p style={{color:"#6cffba"}}>THIS IS A STATIC LOGIN PAGE. CLICK SIGN IN TO VISIT NEXT PAGE</p>
         </center>
 
-        <div className="otherlogin">
-          <p className="fblogin">
-            <img src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" />
-            &nbsp;Login with Facebook
-          </p>
-          <p className="help">Need help?</p>
-        </div>
+     
       </div>
     </div>
   );
