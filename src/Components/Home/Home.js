@@ -70,7 +70,7 @@ function Home() {
         </div>
         <div className="video">
           <img
-            className="tv"
+            className="tv img-fluid"
             src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
           />
           <video autoPlay playsInline muted loop>
@@ -85,19 +85,19 @@ function Home() {
         <div className="card2images">
           <center>
             <img
-              className="mainImage"
+              className="mainImage img-fluid"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
               alt=""
               srcset=""
             />
             <img
-              className="image2"
+              className="image2 img-fluid"
               src="../../home/carddesign.png"
               alt=""
               srcset=""
             />
             <img
-              className="imggif"
+              className="imggif "
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
               alt=""
               srcset=""
@@ -136,7 +136,7 @@ function Home() {
         <div className="card4images">
           <center>
             <img
-              className="image4"
+              className="image4 img-fluid"
               src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf"
               alt=""
               srcset=""

@@ -19,7 +19,7 @@
   height: 450px;
   border-radius: 10px;
   width: 400px;
-  padding: 60px 20px 60px 40px ;
+  padding: 60px 20px 410px 40px ;
   position: relative;
   margin: 40px auto auto auto ;
   z-index: 10;
@@ -63,4 +63,35 @@
 }
 .fblogin img{
   height: 20px;
+}
+
+@media (max-width: 740px) {
+
+.loginbox {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 450px;
+  border-radius: 10px;
+  width: 360px;
+  padding: 60px 20px 410px 25px ;
+  position: relative;
+  margin: 40px auto auto auto ;
+  z-index: 10;
+}
+.loginbox h2{
+  letter-spacing: 1px;
+  font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.loginbox input{
+  border-radius:5px ;
+  color:#fff ;
+  padding: 15px;
+  padding-right: 100px;
+  border:none;
+  background: #333;
+  border-bottom: 2px outset #ff8a05 ;
+  outline: none;
+  margin-bottom: 30px;
+}
 }

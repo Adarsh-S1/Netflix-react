@@ -1,6 +1,5 @@
-.paymentparent{
- font-family: Netflix Sans Regular;
-
+.paymentparent {
+  font-family: Netflix Sans Regular;
 }
 .featurepre {
   display: flex;
@@ -47,4 +46,28 @@
   border-color: #e50f14 !important;
   height: 40px;
 }
+.payphone{
+  display: none;
+}
+@media (max-width: 550px) {
+.plan {
+  float: left;
+  margin-left: -50%;
+}
+.payphone{
+  display: block;
+  margin-left: -46%;
+  margin-top: 200px;
+}
+.paypc{
+  display: none;
+}
+.paybar img {
+margin-left: -79px;
+ 
+}
 
+.paybar Button {
+margin-right: -65px;
+}
+}

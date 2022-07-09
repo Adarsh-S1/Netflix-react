@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1315ac0c.css",
+    "main.js": "/static/js/main.7b2ce029.js",
+    "static/media/Home.jpg": "/static/media/Home.53c9310c06541d3b4d31.jpg",
+    "static/media/Signin.jpg": "/static/media/Signin.8f1c577210e0045d2e33.jpg",
+    "static/media/NetflixSansRegular.woff": "/static/media/NetflixSansRegular.a0aa1994d41253ebe63c.woff",
+    "index.html": "/index.html",
+    "main.1315ac0c.css.map": "/static/css/main.1315ac0c.css.map",
+    "main.7b2ce029.js.map": "/static/js/main.7b2ce029.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1315ac0c.css",
+    "static/js/main.7b2ce029.js"
+  ]
+}

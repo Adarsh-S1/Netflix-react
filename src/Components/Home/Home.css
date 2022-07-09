@@ -265,7 +265,7 @@
   width: 60%;
   border: 0;
 }
-.question1 h3{
+.question1 h3 {
   width: 95%;
 }
 .question1 svg {
@@ -278,8 +278,8 @@
   cursor: pointer;
 }
 
-.question1detail h5{
-  background-color:#303030 ;
+.question1detail h5 {
+  background-color: #303030;
   font-size: 1.625rem;
   font-weight: 400;
   width: 60%;
@@ -287,4 +287,512 @@
   margin-top: -8.5px;
   margin-bottom: 8px;
   padding: 1.2em;
+}
+
+@media (max-width: 550px) {
+  .banner {
+    background-size: contain;
+  }
+  .fadebanner {
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0.1) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    width: 100%;
+    height: 103%;
+    position: absolute;
+  }
+  .netflixlogo {
+    margin-top: 30px;
+    margin-left: 35px;
+    height: 25px;
+  }
+  .signin {
+    margin-top: 30px;
+    margin-left: -50px;
+  }
+  .caption {
+    margin-top: 55px;
+    font-weight: 700;
+    font-size: 2.1rem;
+  }
+  .caption1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: sticky;
+    z-index: 10;
+  }
+
+  .emailcaption {
+    font-weight: 400;
+    font-size: 1.3rem;
+    position: sticky;
+    margin-bottom: 20px;
+    z-index: 10;
+  }
+  .emailform {
+    display: grid;
+  }
+
+  .emailform input {
+    height: 50px !important;
+  }
+
+  .emailform button {
+    font-size: 1.1rem;
+    height: 48px;
+    margin-top: 20px;
+    width: 205px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    display: grid;
+    background-color: #000000;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cardcaption {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .cardcaption h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.725rem;
+    margin-bottom: 30px;
+  }
+  .cardcaption h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+  }
+  .video {
+    height: 296px;
+    width: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cardcaption3 {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .cardcaption3 h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.725rem;
+    margin-bottom: 30px;
+  }
+  .cardcaption3 h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+  }
+  .video3 {
+    width: 100%;
+    display: flex;
+  }
+  .video3 video {
+    margin-left: -329px;
+    margin-top: -59px;
+    width: 250px;
+  }
+  .pc {
+    margin-top: 50px;
+    position: relative;
+    width: 400px;
+    display: flex;
+    margin-left: 32px;
+  }
+
+  .card2images {
+    width: 50%;
+  }
+  .mainImage {
+    width: 500px;
+    margin-left: -150px;
+    margin-top: 200px;
+    position: absolute;
+  }
+  .image2 {
+    margin-left: -65px;
+    margin-top: 470px;
+    width: 310px;
+    position: absolute;
+    z-index: 10;
+  }
+  .imggif {
+    margin-top: 493px;
+    margin-left: 160px;
+    margin-bottom: -20px;
+    z-index: 10;
+    height: 50px;
+    position: absolute;
+  }
+  .cardcaption2 {
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-bottom: 500px;
+  }
+  .cardcaption2 h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: -30px;
+    width: 104%;
+    margin-top: -70px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .cardcaption2 h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: -50px;
+    width: 110%;
+    text-align: center;
+  }
+
+
+  .card4images {
+    width: 50%;
+  }
+  .image4 {
+    width: 400px;
+    margin-left: -100px;
+    margin-top: 200px;
+    position: absolute;
+  }
+
+  .cardcaption4 {
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-bottom: 400px;
+  }
+  .cardcaption4 h1 {
+       font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: -100px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .cardcaption4 h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 110%;
+    margin-left: -60px;
+    text-align: center;
+  }
+
+
+  
+.netflixquestions {
+  background-color: black;
+}
+.netflixquestions h1 {
+  font-size: 2.125rem;
+
+}
+.question1 {
+  background-color: #303030;
+  display: flex;
+  margin: auto;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 10px;
+  font-weight: 400;
+  position: relative;
+  width: 90%;
+  border: 0;
+}
+.question1 h3 {
+  width: 95%;
+}
+.question1 svg {
+  margin: auto;
+  top: 2px;
+  width: 5%;
+  height: 25px;
+  transform: rotate(45deg);
+  position: relative;
+  cursor: pointer;
+}
+
+.question1detail h5 {
+  background-color: #303030;
+  font-size: 1.625rem;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  margin-top: -8.5px;
+  margin-bottom: 8px;
+  padding: 1.2em;
+}
+}
+
+
+
+
+
+
+
+
+@media (max-width: 740px) {
+    .netflixlogo {
+    margin-top: 30px;
+    margin-left: 35px;
+    height: 25px;
+  }
+  .signin {
+    margin-top: 30px;
+    margin-left: -70px;
+  }
+  .caption {
+    margin-top: 55px;
+    font-weight: 700;
+    font-size: 2.1rem;
+  }
+  .caption1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: sticky;
+    z-index: 10;
+  }
+
+  .emailcaption {
+    font-weight: 400;
+    font-size: 1.3rem;
+    position: sticky;
+    margin-bottom: 20px;
+    z-index: 10;
+  }
+  .emailform {
+    display: grid;
+  }
+
+  .emailform input {
+    height: 50px !important;
+    min-width: 350px;
+  }
+
+  .emailform button {
+    font-size: 1.1rem;
+    height: 48px;
+    margin-top: 20px;
+    width: 205px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    display: grid;
+    background-color: #000000;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cardcaption {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .cardcaption h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.725rem;
+    margin-bottom: 30px;
+  }
+  .cardcaption h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+  }
+  .video {
+    height: 296px;
+    width: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.video video {
+ margin-left: -603px;
+  margin-top: -20px;
+}
+  .cardcaption3 {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .cardcaption3 h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.725rem;
+    margin-bottom: 30px;
+  }
+  .cardcaption3 h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+  }
+  .video3 {
+    width: 100%;
+    display: flex;
+  }
+  .video3 video {
+         margin-left: -289px;
+    margin-top: -38px;
+    width: 230px;
+  }
+  .pc {
+    margin-top: 50px;
+    position: relative;
+    width: 350px;
+    display: flex;
+  }
+
+  .card2images {
+    width: 50%;
+  }
+  .mainImage {
+    width: 350px;
+    
+
+    margin-left: -90px;
+    margin-top: 200px;
+    position: absolute;
+  }
+  .image2 {
+    margin-left: -65px;
+    margin-top: 470px;
+    width: 310px;
+    position: absolute;
+    z-index: 10;
+  }
+  .imggif {
+    margin-top: 493px;
+    margin-left: 160px;
+    margin-bottom: -20px;
+    z-index: 10;
+    height: 50px;
+    position: absolute;
+  }
+  .cardcaption2 {
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-bottom: 500px;
+  }
+  .cardcaption2 h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: -30px;
+    width: 104%;
+    margin-top: -70px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .cardcaption2 h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: -50px;
+    width: 110%;
+    text-align: center;
+  }
+
+
+  .card4images {
+    width: 50%;
+  }
+  .image4 {
+    width: 400px;
+    margin-left: -165px;
+    padding-left: 120px;
+    margin-top: 212px;
+    position: absolute;
+  }
+
+  .cardcaption4 {
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-bottom: 400px;
+  }
+  .cardcaption4 h1 {
+       font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: -220px;
+    text-align: right;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+  .cardcaption4 h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 110%;
+    margin-left: -60px;
+    text-align: center;
+  }
+
+
+  
+.netflixquestions {
+  background-color: black;
+}
+.netflixquestions h1 {
+  font-size: 2.125rem;
+
+}
+.question1 {
+  background-color: #303030;
+  display: flex;
+  margin: auto;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 10px;
+  font-weight: 400;
+  position: relative;
+  width: 90%;
+  border: 0;
+}
+.question1 h3 {
+  width: 95%;
+}
+.question1 svg {
+  margin: auto;
+  top: 2px;
+  width: 5%;
+  height: 25px;
+  transform: rotate(45deg);
+  position: relative;
+  cursor: pointer;
+}
+
+.question1detail h5 {
+  background-color: #303030;
+  font-size: 1.625rem;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  margin-top: -8.5px;
+  margin-bottom: 8px;
+  padding: 1.2em;
+}
 }

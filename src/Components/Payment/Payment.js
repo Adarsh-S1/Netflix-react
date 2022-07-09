@@ -3,9 +3,8 @@ import { useHistory } from "react-router-dom";
 import "./Payment.css";
 import { Button } from "react-bootstrap";
 
-  
 function Payment() {
-   let history =useHistory()
+  let history = useHistory();
   return (
     <div className="paymentparent">
       <div className="headerprepayment">
@@ -22,44 +21,46 @@ function Payment() {
         </div>
       </div>
       <hr />
-      <p className="stepspre">
-        STEP 2 OF <b>3</b>
-      </p>
-      <h4 className="planchoosepre">Choose the plan that’s right for you</h4>
-      <div className="featurepre">
-        <svg className="tick" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            fill="#e50f14"
-            d="M3.707 12.293l-1.414 1.414L8 19.414 21.707 5.707l-1.414-1.414L8 16.586z"
-          ></path>
-        </svg>
-        &nbsp; &nbsp;
-        <h6>Watch all you want. Ad-free</h6>
-      </div>
-      <div className="featurepre">
-        <svg className="tick" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            fill="#e50f14"
-            d="M3.707 12.293l-1.414 1.414L8 19.414 21.707 5.707l-1.414-1.414L8 16.586z"
-          ></path>
-        </svg>
-        &nbsp; &nbsp;
-        <h6>Recommendations just for you</h6>
-      </div>
-      <div className="featurepre">
-        <svg className="tick" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            fill="#e50f14"
-            d="M3.707 12.293l-1.414 1.414L8 19.414 21.707 5.707l-1.414-1.414L8 16.586z"
-          ></path>
-        </svg>
-        &nbsp; &nbsp;
-        <h6>Change or cancel your plan anytime</h6>
+      <div className="plan">
+        <p className="stepspre">
+          STEP 2 OF <b>3</b>
+        </p>
+        <h4 className="planchoosepre">Choose the plan that’s right for you</h4>
+        <div className="featurepre">
+          <svg className="tick" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="#e50f14"
+              d="M3.707 12.293l-1.414 1.414L8 19.414 21.707 5.707l-1.414-1.414L8 16.586z"
+            ></path>
+          </svg>
+          &nbsp; &nbsp;
+          <h6>Watch all you want. Ad-free</h6>
+        </div>
+        <div className="featurepre">
+          <svg className="tick" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="#e50f14"
+              d="M3.707 12.293l-1.414 1.414L8 19.414 21.707 5.707l-1.414-1.414L8 16.586z"
+            ></path>
+          </svg>
+          &nbsp; &nbsp;
+          <h6>Recommendations just for you</h6>
+        </div>
+        <div className="featurepre">
+          <svg className="tick" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="#e50f14"
+              d="M3.707 12.293l-1.414 1.414L8 19.414 21.707 5.707l-1.414-1.414L8 16.586z"
+            ></path>
+          </svg>
+          &nbsp; &nbsp;
+          <h6>Change or cancel your plan anytime</h6>
+        </div>
       </div>
       <div className="paymentdetails">
         <div className="monthlyprice">
           <hr />
-          <h6>
+          <h6 className="paypc">
             Monthly Price &nbsp;&nbsp;:&nbsp; <span>₹ 499</span>{" "}
             &nbsp;&nbsp;&nbsp;║&nbsp;&nbsp;Video Quality&nbsp;&nbsp;:&nbsp;{" "}
             <span>Good</span> &nbsp;&nbsp;&nbsp;║&nbsp;&nbsp;Resolution
@@ -119,11 +120,79 @@ function Payment() {
               </svg>
             </span>
           </h6>
+
+          <h6 className="payphone">
+            Monthly Price &nbsp;&nbsp;:&nbsp; <span>₹ 499</span>
+            <br /><br />
+            Video Quality&nbsp;&nbsp;:&nbsp; <span>Good</span> <br /><br />
+            Resolution &nbsp;&nbsp;:&nbsp; <span>480P</span> <br /><br />
+            Device you can use to watch&nbsp;&nbsp;:&nbsp;{" "}
+            <span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="planGrid__supportedDevicesIcon"
+                focusable="false"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6 0C4.89543 0 4 0.895431 4 2V22C4 23.1046 4.89543 24 6 24H18C19.1046 24 20 23.1046 20 22V2C20 0.89543 19.1046 0 18 0H6ZM6 2L18 2V22H6V2ZM13.5 18.5C13.5 17.6716 12.8284 17 12 17C11.1716 17 10.5 17.6716 10.5 18.5C10.5 19.3284 11.1716 20 12 20C12.8284 20 13.5 19.3284 13.5 18.5Z"
+                  fill="currentColor"
+                ></path>
+              </svg>{" "}
+              &nbsp;&nbsp; | &nbsp;&nbsp;
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="planGrid__supportedDevicesIcon"
+                focusable="false"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 3C0.895431 3 0 3.89543 0 5V19C0 20.1046 0.895431 21 2 21H22C23.1046 21 24 20.1046 24 19V5C24 3.89543 23.1046 3 22 3H2ZM2 5H22V19H2V5ZM18.5 13.5C19.3284 13.5 20 12.8284 20 12C20 11.1716 19.3284 10.5 18.5 10.5C17.6716 10.5 17 11.1716 17 12C17 12.8284 17.6716 13.5 18.5 13.5Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              &nbsp;&nbsp; | &nbsp;&nbsp;
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="planGrid__supportedDevicesIcon"
+                focusable="false"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 3C0.895431 3 0 3.89543 0 5V14C0 15.1046 0.895431 16 2 16H22C23.1046 16 24 15.1046 24 14V5C24 3.89543 23.1046 3 22 3H2ZM2 5L22 5V14H2V5ZM2.1072 20.5232C5.27786 20.1813 8.59078 20 12 20C15.4092 20 18.7221 20.1813 21.8928 20.5232L22.1072 18.5347C18.8643 18.1851 15.4798 18 12 18C8.52024 18 5.13573 18.1851 1.8928 18.5347L2.1072 20.5232Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+          </h6>
+
           <hr />
           <div className="paybar">
             <img src="https://badges.razorpay.com/badge-dark.png" />
-            <Button onClick={(e) => { e.preventDefault(); history.push("/home") }}
-              className="btn-danger"> Pay Now
+            <Button
+              onClick={(e) => {
+                e.preventDefault();
+                history.push("/home");
+              }}
+              className="btn-danger"
+            >
+              {" "}
+              Pay Now
             </Button>
           </div>
         </div>

@@ -63,3 +63,12 @@
     margin-top: -10px;
     margin-bottom: 30px;
 }
+@media (max-width: 550px) {
+  .headerpre2 {
+  margin-top: 35px;
+  margin-left: -70px;
+}
+}
+@media (max-width: 740px) {
+
+}

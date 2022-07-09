@@ -1,5 +1,9 @@
 # Getting Started with Create React App
-
+<!-- //  "heroku-postbuild": "npm install",
+//     "start": "node server.js",
+//     "build": "react-scripts build",
+//     "test": "react-scripts test",
+//     "eject": "react-scripts eject" -->
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
